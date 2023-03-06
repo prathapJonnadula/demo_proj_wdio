@@ -1,3 +1,8 @@
+To initialize project :
+
+Run command:
+   npm install
+
 Run Test cases all in parallel using:
 
  Commmand:
