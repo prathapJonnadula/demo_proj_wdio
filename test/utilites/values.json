@@ -1,0 +1,17 @@
+{
+  "wait": {
+    "defaultWait": 4000
+  },
+  "in_app": {
+    "hompage_title": "Swag Labs"
+  },
+  "checkout_infopage_title": "Checkout: Overview",
+  "checkout_overviewpage_title": "Checkout: Overview",
+  "checkout_completepage_title": "Checkout: Complete!",
+  "shipping_info_text": "Free Pony Express Delivery",
+  "err_firstname": "Error: First Name is required",
+  "err_lastname": "Error: Last Name is required",
+  "err_zip": "Error: Postal Code is required",
+  "complete_msg": "Your order has been dispatched, and will arrive just as fast as the pony can get there!",
+  "loginlogo": "Swag Labs"
+}

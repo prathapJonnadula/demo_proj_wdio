@@ -1,0 +1,18 @@
+{
+  "title": "//*[@class = 'title']",
+  "firstName_input": "#first-name",
+  "lastName_input":"//*[@name= 'lastName']",
+  "zipcode_input": "#postal-code",
+  "continue_button": "#continue",
+  "cancel_button": "#cancel",
+  "payment_info": "//*[@class = 'summary_info_label' and text() = 'Payment Information']/following-sibling::div[@class ='summary_value_label' and contains(text(),'Card')]",
+  "Delivery_info": "//*[@class = 'summary_info_label' and text() = 'Shipping Information']/following-sibling::div[@class ='summary_value_label' and contains(text(),'Delivery')]",
+  "Item_Total": "//*[@class = 'summary_info_label' and text() = 'Price Total']/following-sibling::div[@class ='summary_subtotal_label']",
+  "tax": "//*[@class = 'summary_info_label' and text() = 'Price Total']/following-sibling::div[@class ='summary_tax_label']",
+  "total": "//*[@class = 'summary_info_label summary_total_label']",
+  "finish_button": "#finish",
+  "order_complete_header": "//*[@class = 'complete-header']",
+  "order_complete_text": "//*[@class = 'complete-text']",
+  "order_complete_backbutton": "#back-to-products",
+  "error_message": "//*[@class = 'error-message-container error']//h3"
+}

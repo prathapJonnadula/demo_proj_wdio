@@ -1,0 +1,20 @@
+{
+  "logo": "//*[contains(@class, 'app_logo')]",
+  "sort_container": "//*[contains(@class,'select_container')]",
+  "burger_menu": "//*[contains(@class,'bm-burger-button')]",
+  "bugermentopen": "//*[@aria-hidden='false']",
+  "ptroduct_title": "//*[contains(@class,'title')]",
+  "inventory_container": "#inventory_container",
+  "inventory_list" : "//*[contains(@class,'inventory_list')]",
+  "inventory_item": "//*[@class ='inventory_item']",
+  "inventory_item_description": "//*[contains(@class,'inventory_item_description')]",
+  "inventory_item_name": "//*[contains(@class,'inventory_item_name')]",
+  "inventory_item_desc": "//*[@class ='inventory_item_desc']",
+  "inventory_item_price": "//*[contains(@class,'inventory_item_price')]",
+  "add_to_cart_button": "//*[text() ='Add to cart']",
+  "remove_button": "//*[text() ='Remove']",
+  "burger_menu_allitems": "//*[text()= 'All Items']",
+  "burger_menu_about": "//*[text()= 'About']",
+  "burger_menu_logout": "//*[@class='bm-item menu-item' and text()= 'Logout']",
+  "burger_menu_resetApp": "//*[text()= 'Reset App State']"
+}

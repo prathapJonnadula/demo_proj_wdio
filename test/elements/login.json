@@ -1,0 +1,6 @@
+{
+  "usernsame": "#user-name",
+  "password": "//*[@id=\"password\"]",
+  "loginbutton": "[name=\"login-button\"]",
+  "loginlogo": "//*[@class='login_logo']"
+}

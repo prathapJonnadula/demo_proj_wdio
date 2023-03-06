@@ -1,0 +1,11 @@
+{
+  "creds": {
+  "username": "standard_user",
+  "password": "secret_sauce"
+},
+  "order_info": {
+    "first_name": "john",
+    "last_name": "doe",
+    "Zip": "99030"
+  }
+}

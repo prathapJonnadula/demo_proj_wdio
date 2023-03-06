@@ -1,0 +1,9 @@
+{
+  "product_name": "//*[@class = 'inventory_details_name large_size']",
+  "product_details": "//*[@class = 'inventory_details_desc large_size']",
+  "product_price": "//*[@class = 'inventory_details_price']",
+  "add_to_cart_button": "//*[text() = 'Add to cart']",
+  "burger_menu": "//*[@class = 'bm-burger-button']",
+  "back_button": "#back-to-products",
+  "remove_button": "//*[text() = 'Remove']"
+}
