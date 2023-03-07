@@ -11,7 +11,7 @@ import detailsPage from "../pageobjects/details.page";
 class Checkoutstep{
     public async firstNameErrormsg(){
         await checkoutPage.clickConinueButton()
-        await browser.pause(4000)
+        await checkoutPage.waitfor()
         let err_text = await checkoutPage.errortext()
         await expectChai(err_text.includes(values.err_firstname)).to.be.true
     }

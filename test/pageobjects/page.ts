@@ -1,4 +1,5 @@
 import env from '../testdata/url.json' assert {type: "json" };
+import values from '../utilites/values.json' assert {type:"json"}
 import { expect as expectChai } from 'chai'
 
 /**
@@ -49,8 +50,11 @@ export default class Page {
     }
     public async clickelement(xpath){
         let elem = await Promise.resolve(this.getelement(xpath))
-        browser.pause(4000)
+        this.waitfor()
         await elem.click()
+    }
+    public async waitfor(){
+        await browser.pause(values.wait.defaultWait)
     }
 
 }

@@ -17,13 +17,13 @@ class Homestep{
     }
     public async additemtocart(xpath){
         let prod_xpath = await Promise.resolve(HomePage.getaddtocartxpathofitem(xpath))
-        browser.pause(4000)
+        await HomePage.waitfor()
          await HomePage.clickelement(prod_xpath)
     }
 
     public async navigateandVerifyproductaddedtocart(prod_name, prod_desc, prod_price){
         await this.navigatetocartpgae()
-        await browser.pause(4000)
+        await HomePage.waitfor()
         await cartPage.isOnCartPage()
         await cartstep.valdiateproductincart(prod_name, prod_desc, prod_price)
     }

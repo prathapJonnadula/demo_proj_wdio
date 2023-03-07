@@ -42,7 +42,7 @@ class LoginPage extends Page {
         await this.inputUsername.setValue(testdata.creds.username);
         await this.inputPassword.setValue(testdata.creds.password);
         await this.btnSubmit.click();
-        await browser.pause(values.wait.defaultWait)
+        await this.waitfor()
     }
     public async isOnLogin ( ) {
         expect(this.inputUsername).toBeDisplayed()

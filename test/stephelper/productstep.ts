@@ -5,7 +5,7 @@ class Productstep{
     public async Navigatetoproductpage(xpath){
         let prod_xpath = await Promise.resolve(HomePage.getProductNameXpath(xpath))
        await $(prod_xpath).click()
-        browser.pause(4000)
+        await HomePage.waitfor()
     }
 
     public async getProductName(xpath){

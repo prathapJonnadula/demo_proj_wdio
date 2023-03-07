@@ -58,7 +58,7 @@ class HomePage extends page{
     }
 
     public async clickresetapp(){
-        browser.pause(4000)
+        this.waitfor()
         await this.resetapp.click()
     }
 

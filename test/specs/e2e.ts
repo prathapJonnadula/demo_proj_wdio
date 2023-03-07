@@ -7,6 +7,7 @@ import DetailsPage from "../pageobjects/details.page.js";
 import Homestep from "../stephelper/homestep.js";
 import Cartstep from "../stephelper/cartstep.js";
 import cartPage from "../pageobjects/cart.page.js";
+import homePage from "../pageobjects/home.page.js";
 
 describe('My Login application', () => {
     it('add and remove item form the cart and details page', async () => {
@@ -14,7 +15,7 @@ describe('My Login application', () => {
         await expect(browser).toHaveUrl('https://www.saucedemo.com/')
         await LoginPage.login()
         await HomePage.isOnHomepage()
-        await browser.pause(values.wait.defaultWait)
+        await HomePage.waitfor()
         /*
            select Item form available inventory
          */
@@ -24,7 +25,7 @@ describe('My Login application', () => {
         let prod_price = await Productstep.getProductPrice(prod_xpath)
         console.log(prod_name,prod_Desc,prod_price)
         await Productstep.Navigatetoproductpage(prod_xpath);
-        await browser.pause(values.wait.defaultWait)
+        await HomePage.waitfor()
         /*
       adding product to cart from details page
        */
@@ -35,13 +36,13 @@ describe('My Login application', () => {
         await Detailsstep.isproductaddedtocart(cartvalue)
         await Detailsstep.navigateandcheckisonhomepage()
         await Detailsstep.isproductaddedtocart(cartvalue)
-        await browser.pause(values.wait.defaultWait)
+        await HomePage.waitfor()
         await Homestep.navigatetocartpgae()
-        await browser.pause(4000)
+        await homePage.waitfor()
         await Cartstep.valdiateproductincart(prod_name,prod_Desc,prod_price)
         await Cartstep.removeitems()
         await cartPage.clickContinueShoppingbutton()
-        await browser.pause(4000)
+        await homePage.waitfor()
         await Homestep.vlidateremovebuttonchangedtoaddtocart(prod_xpath)
     })
 })

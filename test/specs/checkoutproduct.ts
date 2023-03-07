@@ -16,7 +16,7 @@ describe('My Login application', () => {
         await HomePage.isOnHomepage()
         let prod_xpath = await Promise.resolve(HomePage.getproductxpath())
         let prod_detils = await Promise.resolve(HomePage.getProdcutdetails(prod_xpath))
-        await browser.pause(4000)
+        await HomePage.waitfor()
         let itemno = await Detailsstep.getcartvalue()
         await Homestep.additemtocart(prod_xpath)
         await Detailsstep.cartisupdated(itemno)
